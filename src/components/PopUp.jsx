@@ -1,8 +1,18 @@
-import style from "styled-components";
+import style, { keyframes } from "styled-components";
+
+const scaleUpAnimation = keyframes`
+  from {
+    transform: scale(50%);
+  }
+
+  to {
+    transform: scale(100%);
+  }
+`;
 
 export const PopUp = style.div`
-  width: 600px;
-  height: 1000px;
+  width: 450px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -12,4 +22,5 @@ export const PopUp = style.div`
   margin-right: auto;
   z-index: 2;
   border-radius: 1rem;
+  animation: ${scaleUpAnimation} 500ms;
 `;
