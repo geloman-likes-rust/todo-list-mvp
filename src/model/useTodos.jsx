@@ -3,13 +3,13 @@ export function useTodos() {
   const [serialId, setSerialId] = useState(1);
   const [todos, setTodos] = useState([]);
 
-  function updateTodos() {
+  function addTodo() {
     const todoTitleContent = document.getElementById("title-content").value;
     const todoDescriptionContent = document.getElementById(
       "description-content"
     ).value;
 
-    if(!todoTitleContent) return;
+    if (!todoTitleContent) return;
 
     setTodos((todos) => [
       {
@@ -23,5 +23,6 @@ export function useTodos() {
     setSerialId((id) => id + 1);
     console.log(todos);
   }
-  return { todos, updateTodos };
+
+  return { todos, addTodo, setTodos };
 }
