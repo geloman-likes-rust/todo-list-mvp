@@ -5,9 +5,9 @@ export const AddTask = ({ handleClick }) => {
     <Wrapper
       cursor="pointer"
       contentFlow="center"
-      border="1"
       width="200px"
       height="50px"
+      shadow="10px"
       onClick={handleClick}
     >
       <Text fontWeight="bold" fontSize="35px">
