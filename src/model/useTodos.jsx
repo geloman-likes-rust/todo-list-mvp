@@ -8,6 +8,9 @@ export function useTodos() {
     const todoDescriptionContent = document.getElementById(
       "description-content"
     ).value;
+
+    if(!todoTitleContent) return;
+
     setTodos((todos) => [
       {
         id: serialId,
