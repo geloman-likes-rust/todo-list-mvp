@@ -5,4 +5,5 @@ export const Label = style.label`
   font-weight: bold;
   box-sizing: border-box;
   padding-left 10px;
+  width: ${({width}) => width ? width : "unset"};
 `;
