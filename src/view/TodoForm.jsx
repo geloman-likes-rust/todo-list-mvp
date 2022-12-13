@@ -12,17 +12,18 @@ export const TodoForm = ({ handleClick, handleSave }) => {
       <PopUp>
         <Form>
           <Wrapper flexDirection="column">
-            <Label fontSize="30px">Title</Label>
+            <Label width="100%"fontSize="30px">Title</Label>
             <TextArea
               id="title-content"
-              width="500px"
-              height="150px"
+              width="375px"
+              height="112.5px"
               fontSize="30px"
+              required={true}
             />
           </Wrapper>
           <Wrapper flexDirection="column">
-            <Label fontSize="30px">Description</Label>
-            <TextArea id="description-content" width="500px" height="150px" />
+            <Label width="100%" fontSize="30px">Description</Label>
+            <TextArea id="description-content" width="375px" height="112.5px" />
           </Wrapper>
           <Wrapper>
             <Button onClick={handleSave} type="submit">
