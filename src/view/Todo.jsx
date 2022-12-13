@@ -7,9 +7,9 @@ export const Todo = ({ todoTitle, todoId }) => {
     <Wrapper
       paddingLeft="20px"
       id={todoId}
-      color="gray"
       height="100px"
       width="80%"
+      shadow="3px"
     >
       <CheckBox />
       <Text color="white">{todoTitle}</Text>
