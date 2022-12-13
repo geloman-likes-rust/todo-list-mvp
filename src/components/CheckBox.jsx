@@ -4,4 +4,5 @@ export const CheckBox = style.input.attrs({ type: "checkbox" })`
   width: 30px;
   height: 30px;
   cursor: pointer;
+  accent-color: #97DECE;
 `;
