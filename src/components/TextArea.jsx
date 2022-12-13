@@ -7,6 +7,7 @@ export const TextArea = style.textarea.attrs({ spellCheck: false })`
   padding-right: 10px;
   padding-top: 10px;
   font-size: ${(props) => (props.fontSize ? props.fontSize : "26px")};
+  font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : "100")};
   border-sizing: border-box;
   border-radius: 1rem;
   resize: none;
