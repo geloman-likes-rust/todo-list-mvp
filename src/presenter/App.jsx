@@ -1,4 +1,3 @@
-import { useReducer, useState } from "react";
 import { Wrapper } from "../components/Wrapper";
 import { Title } from "../view/Title";
 import { TodoList } from "../view/TodoList";
@@ -8,7 +7,7 @@ import { useTodoForm } from "../model/useTodoForm";
 import { useTodos } from "../model/useTodos";
 
 const App = () => {
-  const { todos, updateTodos } = useTodos();
+  const { todos, addTodo } = useTodos();
   const [isFormVisible, { showForm, hideForm }] = useTodoForm({
     visible: false,
   });
@@ -17,7 +16,7 @@ const App = () => {
       <Title />
       <TodoList todos={todos} />
       {isFormVisible && (
-        <TodoForm handleClick={hideForm} handleSave={updateTodos} />
+        <TodoForm handleClick={hideForm} handleSave={addTodo} />
       )}
       <AddTask handleClick={showForm} />
     </Wrapper>
