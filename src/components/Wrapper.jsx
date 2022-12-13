@@ -18,4 +18,5 @@ export const Wrapper = style.div`
   padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : "unset")};
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : "unset")};
   cursor: ${({ cursor }) => (cursor ? cursor : "unset")};
+  box-shadow: ${({shadow}) => shadow ? `0px 0px ${shadow}` : "none"};
 `;
