@@ -10,7 +10,12 @@ export const TodoList = ({ todos }) => {
       itemFlow="center"
     >
       {todos.map((todo) => (
-        <Todo key={todo.id} todoId={todo.id} todoTitle={todo.title} />
+        <Todo
+          key={todo.id}
+          todoId={todo.id}
+          todoTitle={todo.title}
+          todoSummary={todo.description}
+        />
       ))}
     </Wrapper>
   );
