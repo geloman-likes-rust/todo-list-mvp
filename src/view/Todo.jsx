@@ -12,7 +12,9 @@ export const Todo = ({ todoTitle, todoId }) => {
       shadow="3px"
     >
       <CheckBox />
-      <Text color="white">{todoTitle}</Text>
+      <Text fontSize="50px" fontWeight="bold" color="#181D31">
+        {todoTitle}
+      </Text>
     </Wrapper>
   );
 };
